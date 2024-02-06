@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import DPWorldLogo from '../1_Assets/DPWorldLogo.png';
+// import DPWorldLogo from '../1_Assets/DPWorldLogo.png';
 
 const Success = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100vh", justifyContent: "center", alignItems: "center", flexWrap: 'wrap', textAlign: 'center' }}>
-        <img style={{ width: '500px'}} src={DPWorldLogo} alt="tick" />
+        {/* <img style={{ width: '500px'}} src={DPWorldLogo} alt="tick" /> */}
         <h1 style={{ color: 'white', fontSize: '25px', marginTop: '60px' }}>INSTRUCTIONS</h1>
 
         <p style={{fontSize: '20px', color: '#DA1E59'}}>Join the Race!</p>
