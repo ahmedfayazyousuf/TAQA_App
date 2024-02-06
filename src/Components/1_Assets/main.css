@@ -20,14 +20,14 @@ html{
     font-family: myFont;
 } */
 
-@font-face{
+/* @font-face{
     font-family: myFontSpecial;
     src:url(PilatWide-Bold.ttf);
 }
 
 *, .specialFont{
     font-family: myFontSpecial;
-}
+} */
 
 /* tr:nth-child(odd) {  
     background-color: #1E1450;
