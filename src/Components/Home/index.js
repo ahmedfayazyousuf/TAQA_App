@@ -10,7 +10,7 @@ const Home = () => {
             </div>
         </NavLink>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
