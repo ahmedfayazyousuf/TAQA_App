@@ -1,0 +1,23 @@
+/* Remove height and width from .container */
+.container {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+/* Set height and width of .slick-slider to 100% of viewport */
+.slick-slider {
+  height: 80vh;
+  width: 100vw;
+}
+
+/* Adjust styles for individual slides */
+.slide {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  }
