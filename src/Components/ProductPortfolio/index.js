@@ -78,15 +78,15 @@ const ProductPortfolio = () => {
                 <Modal.Title>Video Player</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <ReactPlayer
+                {/* <ReactPlayer
                 url="../Videos/Sample.mp4"
                 width="100%"
                 height="100%"
                 controls={true}
-                />
-                {/* <video width="320" height="240" controls>
+                /> */}
+                <video width="320" height="240" controls>
                     <source src="../Videos/Sample.mp4" type="video/mp4"/>
-                </video> */}
+                </video>
             </Modal.Body>
             </Modal>
         </div>
