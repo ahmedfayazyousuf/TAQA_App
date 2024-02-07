@@ -8,6 +8,8 @@ import Navbar from "./Components/Navbar";
 
 import ProductPortfolio from "./Components/ProductPortfolio";
 
+import SmartLC from "./Components/SmartLC";
+
 const App = () => {
   return (
     <>
@@ -18,6 +20,8 @@ const App = () => {
           <Route path="/Test" element={<Test />} />
           
           <Route path="/ProductPortfolio" element={<ProductPortfolio />} />
+          
+          <Route path="/SmartLC" element={<SmartLC />} />
         </Routes>
       </BrowserRouter>
     </>
