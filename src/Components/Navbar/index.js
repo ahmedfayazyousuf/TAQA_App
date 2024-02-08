@@ -39,7 +39,7 @@ const Navbar = () => {
             )
     }
     return (
-    <nav id='navigator' className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: '#fff', padding: '0', margin: '0'}} >  
+    <nav id='navigator' className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: '#005359', padding: '0', margin: '0'}} >  
     <div id='loading' style={{width:'100vw',height:'200vh',background:'rgba(0,0,127,0.5)', position:'absolute',zIndex:'100000000000000000000000000000000000000000000000000'}} onClick={()=>{document.getElementById('loading').style.zIndex='-1000'}}></div>
  
         <NavLink className="navbar-brand" to="/">

@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './style.css'
+import '../1_Assets/Main.css'
 
 const Home = () => {
   const [isAnimating, setIsAnimating] = useState(false);
