@@ -26,13 +26,13 @@ const Navbar = () => {
             return (
                 <>
                     <li className="nav-item active">
-                        <NavLink className="nav-link" to="/ProductPortfolio" style={{fontWeight: '600', color: 'black', backgroundColor: 'grey', borderRadius: '10px', padding: '0 40px 0 40px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px'}}>
+                        <NavLink className="nav-link" to="/ProductPortfolio" style={{fontWeight: '600', color: 'white', backgroundColor: '#066365', borderRadius: '10px', padding: '0 40px 0 40px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10px', border: '1px solid white'}}>
                             Product Portfolio 
                         </NavLink>
                     </li>
                     <li className="nav-item" >
-                        <NavLink className="nav-link" to="/SmartLC" style={{fontWeight: '600', color: 'black', backgroundColor: 'grey', borderRadius: '10px', padding: '0 40px 0 40px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: '30px', marginTop: '10px'}}>
-                            Smart LC
+                        <NavLink className="nav-link" to="/SmartLC" style={{fontWeight: '600', color: 'white', backgroundColor: '#066365', borderRadius: '10px', padding: '0 40px 0 40px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: '30px', marginTop: '10px', border: '1px solid white'}}>
+                            Smart Lower Completions
                         </NavLink>
                     </li>
                 </>
