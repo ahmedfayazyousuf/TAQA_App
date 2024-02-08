@@ -6,14 +6,18 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React, { useRef, useState } from 'react';
+// eslint-disable-next-line
 import Modal from 'react-bootstrap/Modal';
 import Back from './Images/back.png'
+// eslint-disable-next-line
 import Img1 from './Images/img1.jpg'
+// eslint-disable-next-line
 import Img2 from './Images/img2.jpg'
+// eslint-disable-next-line
 import Img3 from './Images/img3.jpg'
 
 const ProductPortfolio = () => {
-
+    // eslint-disable-next-line
     const [ShowVideoModal, setShowVideoModal] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
     const sliderRef = useRef(null);
@@ -51,7 +55,7 @@ const ProductPortfolio = () => {
                         <p style={{width: '100%', fontSize: '20px', color: 'grey', margin: '0'}}>AICD's</p>
                     </div>
                     <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                        <img style={{ height: '170px'}} onClick={()=>{document.getElementById('loading').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
+                        <img style={{ height: '170px'}} onClick={()=>{document.getElementById('load').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
                     </div>
                 </div>
 
@@ -105,42 +109,11 @@ const ProductPortfolio = () => {
                     <p style={{width: '100%', backgroundColor: 'yellow', fontWeight: '900', fontSize: '20px', padding: '10px'}}>Pulse Eight</p>
                 </div>
             </div>
-{/* 
-            <Modal style={{height:'100%',width:"100%"}} show={ShowVideoModal} onHide={() => setShowVideoModal(false)}>
-                <Modal.Header style={{width:'1000px'}} closeButton>
-                    <Modal.Title>PPT</Modal.Title>
-                </Modal.Header>
-                
-                <Modal.Body style={{height:'80vh',width:"1000px"}}> 
-           
-                    <div className="container" onWheel={handleWheel}>
-                        <Slider ref={sliderRef} {...settings}>
-                            <div className="slide" style={{ backgroundColor: 'red'}}>
-                            <span >1</span>
-                            </div>
-                            <div className="slide">
-                            <span>2</span>
-                            </div>
-                            <div className="slide">
-                            <span>3</span>
-                            </div>
-                            <div className="slide">
-                            <span>4</span>
-                            </div>
-                            <div className="slide">
-                            <span>5</span>
-                            </div>
-                            <div className="slide">
-                            <span>6</span>
-                            </div>
-                        </Slider>
-                    </div>
-                </Modal.Body>
-            </Modal> */}
+            
 
-            <div id='loading' style={{width:'100vw',height:'100vh',background:'rgba(0,0,0,0.5)', position:'absolute',display:'flex',justifyContent:'center',alignItems:'center',zIndex:'-100', transition: 'z-index 0.5s'}}>
+            <div id='load' style={{width:'100vw',height:'100vh',background:'rgba(0,0,0,0.5)', position:'absolute',display:'flex',justifyContent:'center',alignItems:'center',zIndex:'-100', transition: 'z-index 0.5s'}}>
     <div style={{position: 'absolute', top: '20px', left: '20px'}}>
-        <button onClick={() => {document.getElementById('loading').style.zIndex='-100'}}>
+        <button onClick={() => {document.getElementById('load').style.zIndex='-100'}}>
             <img src={Back} alt="Back" style={{width:'50px',height:'50px'}} />
         </button>
     </div>

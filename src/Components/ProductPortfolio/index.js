@@ -1,5 +1,5 @@
 import ReactPlayer from 'react-player';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import Image from './Images/image.jpg';
 import PDF from './FloCheck Dissolve Datasheet.pdf'
@@ -11,35 +11,6 @@ const ProductPortfolio = () => {
     function OpenPDF(){
         setShowPDFModal(true)
     }
-
-    useEffect(()=>{
-        let inactivityTimeout;
-
-        function resetInactivityTimer() {
-          // Clear the previous timeout, if any
-          clearTimeout(inactivityTimeout);
-          
-          // Start a new timeout for 10 seconds
-          inactivityTimeout = setTimeout(() => {
-            document.getElementById('loading').style.zIndex = '100'
-                    }, 4000); // 10 seconds in milliseconds
-        }
-        
-        // Reset the inactivity timer whenever there's user activity
-        function handleUserActivity() {
-          resetInactivityTimer();
-        }
-        
-        // Add event listeners for user activity
-        document.addEventListener('click', handleUserActivity);
-        document.addEventListener('mousemove', handleUserActivity);
-        document.addEventListener('keydown', handleUserActivity);
-        
-        // Start the inactivity timer when the page loads
-        resetInactivityTimer();
-    },[])
-
-
 
     return(
             <div style={{height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center',zIndex:'100'}}>
@@ -109,7 +80,6 @@ const ProductPortfolio = () => {
                     </div>
                 </div>
 
-                <div id='loading' style={{width:'100vw',height:'100vh',background:'rgba(0,0,127,0.5)', position:'absolute',zIndex:'100'}} onClick={()=>{document.getElementById('loading').style.zIndex='-1000'}}></div>
                 <div style={{width:'100vw',height:'100vh',background:'rgba(255,255,255,1)', position:'absolute',zIndex:'-10'}}></div>
 
                     <Modal show={showVideoModal} onHide={() => setShowVideoModal(false)}>
