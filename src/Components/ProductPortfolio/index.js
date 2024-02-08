@@ -35,6 +35,7 @@ import SwellRightUltraSleeveDatasheet from './Specsheets/SwellRight Ultra Sleeve
 
 const ProductPortfolio = () => {
     const [showVideoModal, setShowVideoModal] = useState(false);
+    // eslint-disable-next-line
     const [showPDFModal, setShowPDFModal] = useState(false);
     const [PDF, setPDF] = useState();
 
@@ -131,48 +132,19 @@ const ProductPortfolio = () => {
                 </Modal.Body>
             </Modal>
 
-
-            {/* <Modal
-    style={{ 
-        // Set the Modal's width to 100% of the viewport
-        width: '100vw',
-        // Ensure Modal takes up the entire screen by removing margins
-        margin: 0
-    }}
-    show={showPDFModal}
-    onHide={() => setShowPDFModal(false)}
->
-    <Modal.Header closeButton>
-        <Modal.Title>Video Player</Modal.Title>
-    </Modal.Header>
-
-    <Modal.Body style={{ 
-        // Set the Modal Body's width and height to 100% of the viewport
-        width: '100vw', 
-        height: 'calc(100vh - 56px)', // Adjust 56px for Modal Header's height
-        // Ensure the Modal Body takes up the entire screen by removing padding
-        padding: 0
-    }}>
-       
-    </Modal.Body>
-</Modal> */}
-
-<div id='pdf' style={{width:'100vw',height:'100vh',background:'rgba(0,0,127,0.5)', position:'absolute',zIndex:'-100',top:'0'}}>
-    <div onClick={()=>{document.getElementById('pdf').style.zIndex = '-100'}} style={{width:'100%',display:'flex',justifyContent:'flex-end',paddingRight:'20px'}}><p style={{fontSize:'20px',fontWeight:'900'}}>X</p></div>
-    <embed
-                src={PDF}
-                type="application/pdf"
-                style={{
-                    // Set the embedded PDF's width and height to 100% of the Modal Body
-                    width: '100%',
-                    height: '100%'
-                }}
-            />
-</div>
-
-
-
-        </div>
+            <div id='pdf' style={{width:'100vw',height:'100vh',background:'rgba(0,0,127,0.5)', position:'absolute',zIndex:'-100',top:'0'}}>
+                <div onClick={()=>{document.getElementById('pdf').style.zIndex = '-100'}} style={{width:'100%',display:'flex',justifyContent:'flex-end',paddingRight:'20px'}}><p style={{fontSize:'20px',fontWeight:'900'}}>X</p></div>
+                    <embed
+                        src={PDF}
+                        type="application/pdf"
+                        style={{
+                            // Set the embedded PDF's width and height to 100% of the Modal Body
+                            width: '100%',
+                            height: '100%'
+                        }}
+                    />
+                </div>
+            </div>
     )
 }
 
