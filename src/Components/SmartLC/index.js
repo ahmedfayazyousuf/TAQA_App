@@ -10,11 +10,7 @@ import React, { useRef, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Back from './Images/back.png'
 // eslint-disable-next-line
-import Img1 from './Images/img1.jpg'
-// eslint-disable-next-line
-import Img2 from './Images/img2.jpg'
-// eslint-disable-next-line
-import Img3 from './Images/img3.jpg'
+
 
 const ProductPortfolio = () => {
     // eslint-disable-next-line
@@ -120,22 +116,22 @@ const ProductPortfolio = () => {
     <div style={{width:'80%',height:'80%',background:'white', zIndex: '200'}}>
         <div className="container" style={{width:'100%',height:'100%'}} onWheel={handleWheel}>
             <Slider ref={sliderRef} {...settings}>
-                <div className='slide'  style={{ backgroundColor: 'red'}}>
+                <div className='slide slide1'  style={{ backgroundColor: 'red'}}>
                     <span >1</span>
                 </div>
-                <div className="slide">
+                <div className="slide slide2">
                     <span>2</span>
                 </div>
-                <div className="slide">
+                <div className="slide slide3">
                     <span>3</span>
                 </div>
-                <div className="slide">
+                <div className="slide slide4">
                     <span>4</span>
                 </div>
-                <div className="slide">
+                <div className="slide slide5">
                     <span>5</span>
                 </div>
-                <div className="slide">
+                <div className="slide slide6">
                     <span>6</span>
                 </div>
             </Slider>
