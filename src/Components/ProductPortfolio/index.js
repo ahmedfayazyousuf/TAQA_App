@@ -127,7 +127,7 @@ const ProductPortfolio = () => {
             </Modal>
 
             <div id='pdf' style={{width:'100vw',height:'100vh',background:'rgba(0,0,127,0.5)', position:'absolute',zIndex:'-100',top:'0'}}>
-                <div onClick={()=>{document.getElementById('pdf').style.zIndex = '-100'}} style={{width:'100%',display:'flex',justifyContent:'flex-end',paddingRight:'20px'}}><p style={{fontSize:'20px',fontWeight:'900'}}>X</p></div>
+                <div onClick={()=>{document.getElementById('pdf').style.zIndex = '-100'}} style={{width:'100%',display:'flex',justifyContent:'flex-end',paddingRight:'20px', position: 'absolute', zIndex: '1000000000000000000'}}><p style={{fontSize:'20px',fontWeight:'900'}}>X</p></div>
                     <embed
                         src={PDF}
                         type="application/pdf"
