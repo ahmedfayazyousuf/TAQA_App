@@ -9,13 +9,13 @@
 /* Set height and width of .slick-slider to 100% of viewport */
 .slick-slider {
   height: 80vh;
-  width: 100vw;
+  width: 80vw;
 }
 
 /* Adjust styles for individual slides */
 .slide {
-  height: 100vh;
-  width: 100vw;
+  height: 80vh;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,30 +23,379 @@
   background-color: white; /* Adjust as needed */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
-.slide1{
-  background-image: url('./Images/img1.jpg');
+.B1slide1{
+  background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide1.jpg');
   }
   
-  .slide2{
-    background-image: url('./Images/img2.jpg');
+  .B1slide2{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide2.jpg');
   }
   
-  .slide3{
-    background-image: url('./Images/img3.jpg');
+  .B1slide3{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide3.jpg');
   }
   
-  .slide4{
-    background-image: url('./Images/img1.jpg');
+  .B1slide4{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide4.jpg');
   }
   
-  .slide5{
-    background-image: url('./Images/img2.jpg');
+  .B1slide5{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide5.jpg');
   }
   
-  .slide6{
-    background-image: url('./Images/img3.jpg');
+  .B1slide6{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide6.jpg');
+  }
+
+  .B1slide7{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide7.jpg');
+  }
+
+  .B1slide8{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide8.jpg');
+  }
+
+  .B1slide9{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide9.jpg');
+  }
+
+  .B1slide10{
+    background-image: url('./Contents/B1.Screens/B1.SandControlADIPEC2023/Slide10.jpg');
   }
   
+
+
+  .B2aslide1{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide1.jpg');
+  }
+
+  .B2aslide2{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide2.jpg');
+  }
+
+  .B2aslide3{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide3.jpg');
+  }
+
+  .B2aslide4{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide4.jpg');
+  }
+
+  .B2aslide5{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide5.jpg');
+  }
+
+  .B2aslide6{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide6.jpg');
+  }
+
+  .B2aslide7{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide7.jpg');
+  }
+
+  .B2aslide8{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide8.jpg');
+  }
+
+  .B2aslide9{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide9.jpg');
+  }
+
+  .B2aslide10{
+    background-image: url('./Contents/B2.InflowControl/B2.a.AICDs/Slide10.jpg');
+  }
+
+
+
+  .B2bslide1{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide1.jpg');
+  }
+
+  .B2bslide2{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide2.jpg');
+  }
+
+  .B2bslide3{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide3.jpg');
+  }
+
+  .B2bslide4{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide4.jpg');
+  }
+
+  .B2bslide5{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide5.jpg');
+  }
+
+  .B2bslide6{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide6.jpg');
+  }
+
+  .B2bslide7{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide7.jpg');
+  }
+
+  .B2bslide8{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide8.jpg');
+  }
+
+  .B2bslide9{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide9.jpg');
+  }
+
+  .B2bslide10{
+    background-image: url('./Contents/B2.InflowControl/B2.b.FlowFuse/Slide10.jpg');
+  }
+
+
+
+  .B3Fslide1{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide1.jpg');
+  }
+
+  .B3Fslide2{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide2.jpg');
+  }
+
+  .B3Fslide3{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide3.jpg');
+  }
+
+  .B3Fslide4{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide4.jpg');
+  }
+
+  .B3Fslide5{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide5.jpg');
+  }
+
+  .B3Fslide6{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide6.jpg');
+  }
+
+  .B3Fslide7{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide7.jpg');
+  }
+
+  .B3Fslide8{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide8.jpg');
+  }
+
+  .B3Fslide9{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide9.jpg');
+  }
+
+  .B3Fslide10{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide10.jpg');
+  }
+
+  .B3Fslide11{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide11.jpg');
+  }
+
+  .B3Fslide12{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide12.jpg');
+  }
+
+  .B3Fslide13{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide13.jpg');
+  }
+
+  .B3Fslide14{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide14.jpg');
+  }
+
+  .B3Fslide15{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide15.jpg');
+  }
+
+  .B3Fslide16{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide16.jpg');
+  }
+
+  .B3Fslide17{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide17.jpg');
+  }
+
+  .B3Fslide18{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide18.jpg');
+  }
+
+  .B3Fslide19{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide19.jpg');
+  }
+
+  .B3Fslide20{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide20.jpg');
+  }
+
+  .B3Fslide21{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/FiltrexConformableSandControlSolution/Slide21.jpg');
+  }
+
+
+
+
+  
+  .B3Mslide1{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide1.jpg');
+  }
+  .B3Mslide2{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide2.jpg');
+  }
+  .B3Mslide3{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide3.jpg');
+  }
+  .B3Mslide4{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide4.jpg');
+  }
+  .B3Mslide5{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide5.jpg');
+  }
+  .B3Mslide6{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide6.jpg');
+  }
+  .B3Mslide7{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide7.jpg');
+  }
+  .B3Mslide8{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide8.jpg');
+  }
+  .B3Mslide9{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide9.jpg');
+  }
+  .B3Mslide10{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide10.jpg');
+  }
+  .B3Mslide11{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide11.jpg');
+  }
+  .B3Mslide12{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide12.jpg');
+  }
+  .B3Mslide13{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide13.jpg');
+  }
+  .B3Mslide14{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide14.jpg');
+  }
+  .B3Mslide15{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide15.jpg');
+  }
+  .B3Mslide16{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide16.jpg');
+  }
+  .B3Mslide17{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide17.jpg');
+  }
+  .B3Mslide18{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide18.jpg');
+  }
+  .B3Mslide19{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide19.jpg');
+  }
+  .B3Mslide20{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide20.jpg');
+  }
+  .B3Mslide21{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide21.jpg');
+  }
+  .B3Mslide22{
+    background-image: url('./Contents/B3.WaterShutoffTechnologies/MASARSPSwellplug/Slide22.jpg');
+  }
+
+
+
+  .B4slide1{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide1.jpg');
+  }
+  .B4slide2{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide2.jpg');
+  }
+  .B4slide3{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide3.jpg');
+  }
+  .B4slide4{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide4.jpg');
+  }
+  .B4slide5{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide5.jpg');
+  }
+  .B4slide6{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide6.jpg');
+  }
+  .B4slide7{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide7.jpg');
+  }
+  .B4slide8{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide8.jpg');
+  }
+  .B4slide9{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide9.jpg');
+  }
+  .B4slide10{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide10.jpg');
+  }
+  .B4slide11{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide11.jpg');
+  }
+  .B4slide12{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide12.jpg');
+  }
+  .B4slide13{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide13.jpg');
+  }
+  .B4slide14{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide14.jpg');
+  }
+  .B4slide15{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide15.jpg');
+  }
+  .B4slide16{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide16.jpg');
+  }
+  .B4slide17{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide17.jpg');
+  }
+  .B4slide18{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide18.jpg');
+  }
+  .B4slide19{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide19.jpg');
+  }
+  .B4slide20{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide20.jpg');
+  }
+  .B4slide21{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide21.jpg');
+  }
+  .B4slide22{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide22.jpg');
+  }
+  .B4slide23{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide23.jpg');
+  }
+  .B4slide24{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide24.jpg');
+  }
+  .B4slide25{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide25.jpg');
+  }
+  .B4slide26{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide26.jpg');
+  }
+  .B4slide27{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide27.jpg');
+  }
+  .B4slide28{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide28.jpg');
+  }
+  .B4slide29{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide29.jpg');
+  }
+  .B4slide30{
+    background-image: url('./Contents/B4.PulseEight/P8PresentationGeneral/Slide30.jpg');
+  }

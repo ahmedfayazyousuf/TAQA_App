@@ -42,7 +42,7 @@ const ProductPortfolio = () => {
 
 
     return(
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '90vh', width: '100vw', background: 'red', flexDirection: 'column'}}>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', width: '100vw', background: 'red', flexDirection: 'column'}}>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '45vh', width: '100vw', background: 'blue'}}>
                 
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start', height: '45vh', width: '30vw', background: 'red', flexDirection: 'column'}}>
@@ -66,7 +66,7 @@ const ProductPortfolio = () => {
                             </div>
 
                             <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                <img style={{ height: '170px'}} src={PPTImage} alt="PPTImage" />
+                                <img onClick={()=>{document.getElementById('load2').style.zIndex = '100'}} style={{ height: '170px'}} src={PPTImage} alt="PPTImage" />
                             </div>
                         </div>
 
@@ -77,7 +77,7 @@ const ProductPortfolio = () => {
                             </div>
 
                             <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                <img style={{ height: '170px'}} src={PPTImageSmall} alt="PPTImage" />
+                                <img style={{ height: '170px'}} onClick={()=>{document.getElementById('load3').style.zIndex = '100'}} src={PPTImageSmall} alt="PPTImage" />
                                 <img style={{ height: '170px'}} src={VideoImage} alt="PPTImage" />
                             </div>
                         </div>
@@ -97,12 +97,24 @@ const ProductPortfolio = () => {
             </div>
 
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '45vh', width: '100vw', background: 'green'}}>
-                <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'center', height: '45vh', width: '30vw', background: 'grey'}}>
+                <div style={{display: 'flex', flexDirection:'column',alignItems: 'flex-start', justifyContent: 'center', height: '45vh', width: '30vw', background: 'grey'}}>
                     <p style={{width: '100%', backgroundColor: 'yellow', fontWeight: '900', fontSize: '20px', padding: '10px'}}>Water Shut</p>
+
+                    <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <img style={{ height: '170px'}} onClick={()=>{document.getElementById('load4').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
+                        <img style={{ height: '170px'}} onClick={()=>{document.getElementById('load5').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
+
+                    </div>
                 </div>
 
-                <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'center', height: '45vh', width: '70vw', background: 'red'}}>
+                <div style={{display: 'flex',flexDirection:'column' ,alignItems: 'flex-start', justifyContent: 'center', height: '45vh', width: '70vw', background: 'red'}}>
                     <p style={{width: '100%', backgroundColor: 'yellow', fontWeight: '900', fontSize: '20px', padding: '10px'}}>Pulse Eight</p>
+
+
+                    <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <img style={{ height: '170px'}} onClick={()=>{document.getElementById('load6').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
+                        <img style={{ height: '170px'}} src={VideoImage} alt="PPTImage" />                    
+                    </div>
                 </div>
             </div>
             
@@ -113,33 +125,297 @@ const ProductPortfolio = () => {
             <img src={Back} alt="Back" style={{width:'50px',height:'50px'}} />
         </button>
     </div>
-    <div style={{width:'80%',height:'80%',background:'white', zIndex: '200'}}>
+    <div style={{width:'80vw',height:'80vh',background:'white', zIndex: '200'}}>
         <div className="container" style={{width:'100%',height:'100%'}} onWheel={handleWheel}>
             <Slider ref={sliderRef} {...settings}>
-                <div className='slide slide1'  style={{ backgroundColor: 'red'}}>
-                    <span >1</span>
+                <div className='slide B1slide1'  style={{ backgroundColor: 'red'}}>
                 </div>
-                <div className="slide slide2">
-                    <span>2</span>
+                <div className="slide B1slide2">
                 </div>
-                <div className="slide slide3">
-                    <span>3</span>
+                <div className="slide B1slide3">
                 </div>
-                <div className="slide slide4">
-                    <span>4</span>
+                <div className="slide B1slide4">
                 </div>
-                <div className="slide slide5">
-                    <span>5</span>
+                <div className="slide B1slide5">
                 </div>
-                <div className="slide slide6">
-                    <span>6</span>
+                <div className="slide B1slide6">
+                </div>
+                <div className="slide B1slide7">
+                </div>
+                <div className="slide B1slide8">
+                </div>
+                <div className="slide B1slide9">
+                </div>
+                <div className="slide B1slide10">
                 </div>
             </Slider>
         </div>
     </div>
-</div>
+
+            </div>
+
+            <div id='load2' style={{width:'100vw',height:'100vh',background:'rgba(0,0,0,0.5)', position:'absolute',display:'flex',justifyContent:'center',alignItems:'center',zIndex:'-100', transition: 'z-index 0.5s'}}>
+    <div style={{position: 'absolute', top: '20px', left: '20px'}}>
+        <button onClick={() => {document.getElementById('load2').style.zIndex='-100'}}>
+            <img src={Back} alt="Back" style={{width:'50px',height:'50px'}} />
+        </button>
+    </div>
+    <div style={{width:'80vw',height:'80vh',background:'white', zIndex: '200'}}>
+        <div className="container" style={{width:'100%',height:'100%'}} onWheel={handleWheel}>
+            <Slider ref={sliderRef} {...settings}>
+                <div className='slide B2aslide1'  style={{ backgroundColor: 'red'}}>
+                </div>
+                <div className="slide B2aslide2">
+                </div>
+                <div className="slide B2aslide3">
+                </div>
+                <div className="slide B2aslide4">
+                </div>
+                <div className="slide B2aslide5">
+                </div>
+                <div className="slide B2aslide6">
+                </div>
+                <div className="slide B2aslide7">
+                </div>
+                <div className="slide B2aslide8">
+                </div>
+                <div className="slide B2aslide9">
+                </div>
+                <div className="slide B2aslide10">
+                </div>
+            </Slider>
+        </div>
+    </div>
+
+            </div>
+
+            <div id='load3' style={{width:'100vw',height:'100vh',background:'rgba(0,0,0,0.5)', position:'absolute',display:'flex',justifyContent:'center',alignItems:'center',zIndex:'-100', transition: 'z-index 0.5s'}}>
+    <div style={{position: 'absolute', top: '20px', left: '20px'}}>
+        <button onClick={() => {document.getElementById('load3').style.zIndex='-100'}}>
+            <img src={Back} alt="Back" style={{width:'50px',height:'50px'}} />
+        </button>
+    </div>
+    <div style={{width:'80vw',height:'80vh',background:'white', zIndex: '200'}}>
+        <div className="container" style={{width:'100%',height:'100%'}} onWheel={handleWheel}>
+            <Slider ref={sliderRef} {...settings}>
+                <div className='slide B2bslide1'  style={{ backgroundColor: 'red'}}>
+                </div>
+                <div className="slide B2bslide2">
+                </div>
+                <div className="slide B2bslide3">
+                </div>
+                <div className="slide B2bslide4">
+                </div>
+                <div className="slide B2bslide5">
+                </div>
+                <div className="slide B2bslide6">
+                </div>
+                <div className="slide B2bslide7">
+                </div>
+                <div className="slide B2bslide8">
+                </div>
+                <div className="slide B2bslide9">
+                </div>
+                <div className="slide B2bslide10">
+                </div>
+            </Slider>
+        </div>
+    </div>
+
+            </div>
 
 
+            <div id='load4' style={{width:'100vw',height:'100vh',background:'rgba(0,0,0,0.5)', position:'absolute',display:'flex',justifyContent:'center',alignItems:'center',zIndex:'-100', transition: 'z-index 0.5s'}}>
+    <div style={{position: 'absolute', top: '20px', left: '20px'}}>
+        <button onClick={() => {document.getElementById('load4').style.zIndex='-100'}}>
+            <img src={Back} alt="Back" style={{width:'50px',height:'50px'}} />
+        </button>
+    </div>
+    <div style={{width:'80vw',height:'80vh',background:'white', zIndex: '200'}}>
+        <div className="container" style={{width:'100%',height:'100%'}} onWheel={handleWheel}>
+            <Slider ref={sliderRef} {...settings}>
+                <div className='slide B3Fslide1'  style={{ backgroundColor: 'red'}}>
+                </div>
+                <div className="slide B3Fslide2">
+                </div>
+                <div className="slide B3Fslide3">
+                </div>
+                <div className="slide B3Fslide4">
+                </div>
+                <div className="slide B3Fslide5">
+                </div>
+                <div className="slide B3Fslide6">
+                </div>
+                <div className="slide B3Fslide7">
+                </div>
+                <div className="slide B3Fslide8">
+                </div>
+                <div className="slide B3Fslide9">
+                </div>
+                <div className="slide B3Fslide10">
+                </div>
+                <div className="slide B3Fslide11">
+                </div>
+                <div className="slide B3Fslide12">
+                </div>
+                <div className="slide B3Fslide13">
+                </div>
+                <div className="slide B3Fslide14">
+                </div>
+                <div className="slide B3Fslide15">
+                </div>
+                <div className="slide B3Fslide16">
+                </div>
+                <div className="slide B3Fslide17">
+                </div>
+                <div className="slide B3Fslide18">
+                </div>
+                <div className="slide B3Fslide19">
+                </div>
+                <div className="slide B3Fslide20">
+                </div>
+                <div className="slide B3Fslide21">
+                </div>
+            </Slider>
+        </div>
+    </div>
+
+            </div>
+
+            <div id='load5' style={{width:'100vw',height:'100vh',background:'rgba(0,0,0,0.5)', position:'absolute',display:'flex',justifyContent:'center',alignItems:'center',zIndex:'-100', transition: 'z-index 0.5s'}}>
+    <div style={{position: 'absolute', top: '20px', left: '20px'}}>
+        <button onClick={() => {document.getElementById('load5').style.zIndex='-100'}}>
+            <img src={Back} alt="Back" style={{width:'50px',height:'50px'}} />
+        </button>
+    </div>
+    <div style={{width:'80vw',height:'80vh',background:'white', zIndex: '200'}}>
+        <div className="container" style={{width:'100%',height:'100%'}} onWheel={handleWheel}>
+        <Slider ref={sliderRef} {...settings}>
+                <div className='slide B3Mslide1'  style={{ backgroundColor: 'red'}}>
+                </div>
+                <div className="slide B3Mslide2">
+                </div>
+                <div className="slide B3Mslide3">
+                </div>
+                <div className="slide B3Mslide4">
+                </div>
+                <div className="slide B3Mslide5">
+                </div>
+                <div className="slide B3Mslide6">
+                </div>
+                <div className="slide B3Mslide7">
+                </div>
+                <div className="slide B3Mslide8">
+                </div>
+                <div className="slide B3Mslide9">
+                </div>
+                <div className="slide B3Mslide10">
+                </div>
+                <div className="slide B3Mslide11">
+                </div>
+                <div className="slide B3Mslide12">
+                </div>
+                <div className="slide B3Mslide13">
+                </div>
+                <div className="slide B3Mslide14">
+                </div>
+                <div className="slide B3Mslide15">
+                </div>
+                <div className="slide B3Mslide16">
+                </div>
+                <div className="slide B3Mslide17">
+                </div>
+                <div className="slide B3Mslide18">
+                </div>
+                <div className="slide B3Mslide19">
+                </div>
+                <div className="slide B3Mslide20">
+                </div>
+                <div className="slide B3Mslide21">
+                </div>
+                <div className="slide B3Mslide22">
+                </div>
+            </Slider>
+        </div>
+    </div>
+
+            </div>
+
+
+            <div id='load6' style={{width:'100vw',height:'100vh',background:'rgba(0,0,0,0.5)', position:'absolute',display:'flex',justifyContent:'center',alignItems:'center',zIndex:'-100', transition: 'z-index 0.5s'}}>
+    <div style={{position: 'absolute', top: '20px', left: '20px'}}>
+        <button onClick={() => {document.getElementById('load6').style.zIndex='-100'}}>
+            <img src={Back} alt="Back" style={{width:'50px',height:'50px'}} />
+        </button>
+    </div>
+    <div style={{width:'80vw',height:'80vh',background:'white', zIndex: '200'}}>
+        <div className="container" style={{width:'100%',height:'100%'}} onWheel={handleWheel}>
+        <Slider ref={sliderRef} {...settings}>
+                <div className='slide B4slide1'  style={{ backgroundColor: 'red'}}>
+                </div>
+                <div className="slide B4slide2">
+                </div>
+                <div className="slide B4slide3">
+                </div>
+                <div className="slide B4slide4">
+                </div>
+                <div className="slide B4slide5">
+                </div>
+                <div className="slide B4slide6">
+                </div>
+                <div className="slide B4slide7">
+                </div>
+                <div className="slide B4slide8">
+                </div>
+                <div className="slide B4slide9">
+                </div>
+                <div className="slide B4slide10">
+                </div>
+                <div className="slide B4slide11">
+                </div>
+                <div className="slide B4slide12">
+                </div>
+                <div className="slide B4slide13">
+                </div>
+                <div className="slide B4slide14">
+                </div>
+                <div className="slide B4slide15">
+                </div>
+                <div className="slide B4slide16">
+                </div>
+                <div className="slide B4slide17">
+                </div>
+                <div className="slide B4slide18">
+                </div>
+                <div className="slide B4slide19">
+                </div>
+                <div className="slide B4slide20">
+                </div>
+                <div className="slide B4slide21">
+                </div>
+                <div className="slide B4slide22">
+                </div>
+                <div className="slide B4slide23">
+                </div>
+                <div className="slide B4slide24">
+                </div>
+                <div className="slide B4slide25">
+                </div>
+                <div className="slide B4slide26">
+                </div>
+                <div className="slide B4slide27">
+                </div>
+                <div className="slide B4slide28">
+                </div>
+                <div className="slide B4slide29">
+                </div>
+                <div className="slide B4slide30">
+                </div>
+            </Slider>
+        </div>
+    </div>
+
+            </div>
 
 
         </div>
