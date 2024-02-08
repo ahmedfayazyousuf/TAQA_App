@@ -42,7 +42,7 @@ const ProductPortfolio = () => {
 
 
     return(
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', width: '100vw', flexDirection: 'column',backgroundColor:'#005359'}}>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', width: '100vw', flexDirection: 'column', backgroundColor: '#005359'}}>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '45vh', width: '100vw'}}>
                 
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start', height: '45vh', width: '30vw', flexDirection: 'column'}}>
@@ -50,8 +50,8 @@ const ProductPortfolio = () => {
                     <div style={{width: '100%', height: '60px', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0'}}>
                         <p style={{width: '100%', fontSize: '20px', color: 'grey', margin: '0'}}>AICD's</p>
                     </div>
-                    <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor:'#005359'}}>
-                        <img style={{ height: '170px',backgroundColor:'#005359'}} onClick={()=>{document.getElementById('load').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
+                    <div style={{width: '100%', height: '30vh', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <img style={{ height: '150px'}} onClick={()=>{document.getElementById('load').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
                     </div>
                 </div>
 
@@ -65,8 +65,8 @@ const ProductPortfolio = () => {
                                 <p style={{width: '100%', fontSize: '20px', color: 'grey', margin: '0', padding: '0'}}>AICD's</p>
                             </div>
 
-                            <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor:'#005359'}}>
-                                <img onClick={()=>{document.getElementById('load2').style.zIndex = '100'}} style={{ height: '170px',backgroundColor:'#005359'}} src={PPTImage} alt="PPTImage" />
+                            <div style={{width: '100%', height: '30vh', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                <img onClick={()=>{document.getElementById('load2').style.zIndex = '100'}} style={{ height: '150px'}} src={PPTImage} alt="PPTImage" />
                             </div>
                         </div>
 
@@ -76,9 +76,9 @@ const ProductPortfolio = () => {
                                 <p style={{width: '100%', fontSize: '20px', color: 'grey', margin: '0'}}>FloFuse</p>
                             </div>
 
-                            <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor:'#005359'}}>
-                                <img style={{ height: '170px',backgroundColor:'#005359'}} onClick={()=>{document.getElementById('load3').style.zIndex = '100'}} src={PPTImageSmall} alt="PPTImage" />
-                                <img style={{ height: '170px',backgroundColor:'#005359'}} src={VideoImage} alt="PPTImage" />
+                            <div style={{width: '100%', height: '30vh', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                <img style={{ height: '150px'}} onClick={()=>{document.getElementById('load3').style.zIndex = '100'}} src={PPTImageSmall} alt="PPTImage" />
+                                <img style={{ height: '150px', marginLeft: '10px'}} src={VideoImage} alt="PPTImage" />
                             </div>
                         </div>
 
@@ -88,8 +88,8 @@ const ProductPortfolio = () => {
                                 <p style={{width: '100%', fontSize: '20px', color: 'grey', margin: '0'}}>Case Study</p>
                             </div>
 
-                            <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor:'#005359'}}>
-                                <img style={{ height: '170px',backgroundColor:'#005359'}} src={PPTImage} alt="PPTImage" />
+                            <div style={{width: '100%', height: '30vh', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                <img style={{ height: '150px'}} src={PPTImage} alt="PPTImage" />
                             </div>
                         </div>
                     </div>
@@ -100,9 +100,9 @@ const ProductPortfolio = () => {
                 <div style={{display: 'flex', flexDirection:'column',alignItems: 'flex-start', justifyContent: 'center', height: '45vh', width: '30vw'}}>
                     <p style={{width: '100%',  fontWeight: '900', fontSize: '20px', padding: '10px'}}>Water Shut</p>
 
-                    <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor:'#005359'}}>
-                        <img style={{ height: '170px',backgroundColor:'#005359'}} onClick={()=>{document.getElementById('load4').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
-                        <img style={{ height: '170px',backgroundColor:'#005359'}} onClick={()=>{document.getElementById('load5').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
+                    <div style={{width: '100%', height: '30vh', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <img style={{ height: '150px'}} onClick={()=>{document.getElementById('load4').style.zIndex = '100'}} src={PPTImageSmall} alt="PPTImage" />
+                        <img style={{ height: '150px', marginLeft: '10px'}} onClick={()=>{document.getElementById('load5').style.zIndex = '100'}} src={PPTImageSmall} alt="PPTImage" />
 
                     </div>
                 </div>
@@ -111,9 +111,9 @@ const ProductPortfolio = () => {
                     <p style={{width: '100%',  fontWeight: '900', fontSize: '20px', padding: '10px'}}>Pulse Eight</p>
 
 
-                    <div style={{width: '100%', height: '30vh', backgroundColor: 'white', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor:'#005359'}}>
-                        <img style={{ height: '170px',backgroundColor:'#005359'}} onClick={()=>{document.getElementById('load6').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
-                        <img style={{ height: '170px',backgroundColor:'#005359'}} src={VideoImage} alt="PPTImage" />                    
+                    <div style={{width: '100%', height: '30vh', margin: '0', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <img style={{ height: '150px'}} onClick={()=>{document.getElementById('load6').style.zIndex = '100'}} src={PPTImage} alt="PPTImage" />
+                        <img style={{ height: '150px', marginLeft: '10px'}} src={VideoImage} alt="PPTImage" />                    
                     </div>
                 </div>
             </div>
