@@ -7,33 +7,20 @@ const Navbar = () => {
 
     useEffect(()=>{
         let inactivityTimeout;
-
         function resetInactivityTimer() {
-          // Clear the previous timeout, if any
           clearTimeout(inactivityTimeout);
-          
-          // Start a new timeout for 10 seconds
           inactivityTimeout = setTimeout(() => {
             document.getElementById('loading').style.zIndex = '100'
-                    }, 10000); // 10 seconds in milliseconds
+                    }, 10000);
         }
-        
-        // Reset the inactivity timer whenever there's user activity
         function handleUserActivity() {
           resetInactivityTimer();
         }
-        
-        // Add event listeners for user activity
         document.addEventListener('click', handleUserActivity);
         document.addEventListener('mousemove', handleUserActivity);
         document.addEventListener('keydown', handleUserActivity);
-        
-        // Start the inactivity timer when the page loads
         resetInactivityTimer();
-        
     },[])
-
-
 
     const RenderMenu = () => {
             return (
@@ -53,7 +40,7 @@ const Navbar = () => {
     }
     return (
     <nav id='navigator' className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: '#fff', padding: '0', margin: '0'}} >  
-    <div id='loading' style={{width:'100vw',height:'200vh',background:'rgba(0,0,127,0.5)', position:'absolute',zIndex:'100'}} onClick={()=>{document.getElementById('loading').style.zIndex='-1000'}}></div>
+    <div id='loading' style={{width:'100vw',height:'200vh',background:'rgba(0,0,127,0.5)', position:'absolute',zIndex:'100000000000000000000000000000000000000000000000000'}} onClick={()=>{document.getElementById('loading').style.zIndex='-1000'}}></div>
  
         <NavLink className="navbar-brand" to="/">
             {/* <img style={{marginLeft:'15px', width: '42px', height: '40px', marginTop: '5px', marginBottom: '5px'}} src={silalwhite} alt="the hanging house logo"/> */}
